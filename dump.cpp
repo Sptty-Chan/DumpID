@@ -4,7 +4,7 @@
 Authon: Sptty Chan
 Github: https://github.com/sptty-chan
 Tool  : Dump Id Update work 100%
-*/
+*/ 
 
 #ifndef PY_SSIZE_T_CLEAN
 #define PY_SSIZE_T_CLEAN
@@ -1490,6 +1490,7 @@ static const char __pyx_k_ask[] = "ask";
 static const char __pyx_k_brk[] = "brk";
 static const char __pyx_k_doc[] = "__doc__";
 static const char __pyx_k_end[] = "end";
+static const char __pyx_k_inf[] = "inf";
 static const char __pyx_k_num[] = "num";
 static const char __pyx_k_Host[] = "Host";
 static const char __pyx_k_data[] = "data";
@@ -1697,6 +1698,7 @@ static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_kp_u_id_ditambahkan_disimpan_ke;
 static PyObject *__pyx_n_s_idinput;
 static PyObject *__pyx_n_s_import;
+static PyObject *__pyx_n_s_inf;
 static PyObject *__pyx_n_s_init;
 static PyObject *__pyx_n_s_input;
 static PyObject *__pyx_n_s_install_opener;
@@ -3520,6 +3522,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_u_id_ditambahkan_disimpan_ke, __pyx_k_id_ditambahkan_disimpan_ke, sizeof(__pyx_k_id_ditambahkan_disimpan_ke), 0, 1, 0, 0},
   {&__pyx_n_s_idinput, __pyx_k_idinput, sizeof(__pyx_k_idinput), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
+  {&__pyx_n_s_inf, __pyx_k_inf, sizeof(__pyx_k_inf), 0, 0, 1, 1},
   {&__pyx_n_s_init, __pyx_k_init, sizeof(__pyx_k_init), 0, 0, 1, 1},
   {&__pyx_n_s_input, __pyx_k_input, sizeof(__pyx_k_input), 0, 0, 1, 1},
   {&__pyx_n_s_install_opener, __pyx_k_install_opener, sizeof(__pyx_k_install_opener), 0, 0, 1, 1},
@@ -4263,10 +4266,11 @@ if (!__Pyx_RefNanny) {
       if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_inf, __pyx_t_4) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
        
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_dumpid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_inf); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 137, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
